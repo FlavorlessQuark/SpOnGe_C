@@ -55,7 +55,6 @@ int main(int argc, char **argv)
 	}
 
 	fd = ((argc == 3) ? (open(argv[2], O_WRONLY | O_CREAT, 0777)) : (0));
-	printf("Fd %d\n", fd);
 	while (head)
 	{
 		Spongify(head);
